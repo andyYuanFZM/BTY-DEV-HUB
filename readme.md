@@ -1,17 +1,34 @@
-## [Chain33]DAPP开发教程
+# 🪐 BTY Develop
 
-#### 1. Chain33 DAPP开发简介  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L1%20Chain33%20DAPP%E5%BC%80%E5%8F%91%E7%AE%80%E4%BB%8B/L1_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1BM411v745/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 2. Chain33私链开发环境搭建  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L2%20Chain33%E7%A7%81%E9%93%BE%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/L2_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1JY411B7Jc/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 3. Chain33 DAPP开发工具和框架简介  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L3%20Chain33%20DAPP%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%92%8C%E6%A1%86%E6%9E%B6%E7%AE%80%E4%BB%8B/L3_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1654y1A7ar/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 4. web3.js基本开发环境搭建及常用查询接口  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L4%20web3.js%E5%9F%BA%E6%9C%AC%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/L4_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1pA41127sK/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 5. web3.js账户操作和交易发送  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L5%20web3.js%E8%B4%A6%E6%88%B7%E6%93%8D%E4%BD%9C%E5%92%8C%E4%BA%A4%E6%98%93%E5%8F%91%E9%80%81/L5_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1p54y1w7go/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 6. web3.js合约部署  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L6%20web3.js%E5%90%88%E7%BA%A6%E9%83%A8%E7%BD%B2/L6_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1x24y1H7zj/?share_source=copy_web)  
-#### 7. web3.js合约调用  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L7%20web3.js%E5%90%88%E7%BA%A6%E8%AF%BB%E5%86%99/L7_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1Lo4y1r7Sb/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 8. web3.js合约事件  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L8%20web3.js%E5%90%88%E7%BA%A6%E4%BA%8B%E4%BB%B6/L8_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1ok4y187Yo/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 9. ethers.js环境搭建和基本操作  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L9%20ethers.js%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/L9_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1Y84y1A7Mh/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) 
-#### 10. L10 ethers.js合约部署及读写  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L10%20ethers.js%E5%90%88%E7%BA%A6%E9%83%A8%E7%BD%B2%E5%8F%8A%E8%AF%BB%E5%86%99/L10_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV13g4y1x7P3/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) 
-#### 11. L11 ethers.js事件监听  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L11%20ethers.js%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/L11_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1wv4y157wP/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)   
-#### 12. L12 web3j基本开发环境搭建  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L12%20web3j%E5%9F%BA%E6%9C%AC%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/L12_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1LN411N7M4/?share_source=copy_web)   
-#### 13. L13 web3j合约部署和调用  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L13%20web3j%E5%90%88%E7%BA%A6%E9%83%A8%E7%BD%B2%E5%8F%8A%E8%AF%BB%E5%86%99/L13_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1tM4y1277E/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)   
-#### 14. L14 web3j事件监听  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L14%20web3j%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/L14_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1HM411T7Gn/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
-#### 15. L15 go-sdk环境搭建  [[文档链接]](https://github.com/andyYuanFZM/Chain33_Dapp_develop/blob/main/L15%20go-sdk%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/l15_readme.md)  [[视频课程]](https://www.bilibili.com/video/BV1sT411x79J/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)  
+一个面向 Web3 开发者的系统教程系列，带你从零开始在 **BTY 公链** 上构建、发行、部署与扩展区块链应用。  
+从资产上链到 Rollup，从链游到 DeFi，这里是你探索 BTY 技术生态的完整地图。  
+
+---
+
+## 🚀 项目简介
+
+BTY 是一条 **兼容以太坊 (EVM)** 的高性能区块链，支持 **平行链机制、Rollup 扩展、跨链互通** 等能力。  
+本教程系列将带你从最基础的开发环境配置，到复杂的 RWA 与 Layer2 实战部署，  
+让你能够在 BTY 上实现与 ETH 相同甚至更强的开发体验。
+
+---
+
+## 🧭 教程路线图
+
+| 模块 | 名称 | 内容概述 | 状态 |
+|------|------|-----------|------|
+| 0️⃣ | **BTY开发环境与SDK入门** | 介绍 `Web3.js`, `ethers.js`, `web3j`, `go-eth` 等 SDK 的部署与交互方式 | ✅ 已完成 |
+| 1️⃣ | **BTY链资产合约·从ERC20到RWA解析** | 深入资产标准：ERC-20、ERC-1400、ERC-4363（RWA）等的原理、编码、部署与调用 | 🧩 进行中 |
+| 2️⃣ | **BTY Rollup 技术与二层扩展** | 探索 BTY 平行链与 Rollup 架构，构建高性能 Layer2 环境 | 📦 计划中 |
+| 3️⃣ | **BTY 链游开发实践（GameFi）** | 在 BTY 上实现链游资产、NFT 与经济系统的完整开发流程 | 📦 计划中 |
+| 4️⃣ | **BTY Swap 与 DeFi 应用实现** | 从零构建去中心化交易与流动性系统，理解 BTY 上的 DeFi 生态 | 📦 计划中 |
+
+---
+
+## 💡 学完你将掌握
+
+- 如何在 BTY 网络上部署、调用、交互智能合约  
+- 如何创建稳定币、合规资产与 RWA 代币  
+- 如何使用平行链与 Rollup 提升扩展性  
+- 如何在 BTY 上构建链游、NFT、Swap 应用  
+
