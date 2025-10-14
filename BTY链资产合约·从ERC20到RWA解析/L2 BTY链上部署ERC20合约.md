@@ -118,11 +118,6 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 ./bityuan-cli.exe account create -t 2 -l hardhat
 ```
 
-**说明**：
-- `-t 2` - 使用secp256k1算法
-- `-l hardhat` - 标签为hardhat的地址
-- 记录生成的地址，后续需要向此地址转账
-
 ### 2. 获取测试币
 
 ### 3. 导出私钥
@@ -135,23 +130,9 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 **安全提醒**：
 - ⚠️ 私钥信息敏感，请妥善保管
 - ⚠️ 不要将私钥提交到代码仓库
-- ⚠️ 测试完成后及时转移剩余资金
+- ⚠️ 用主链测试，测试完成后及时转移剩余资金
 
-### 4. 进入Hardhat项目
-
-```bash
-# 进入hardhat-project目录
-cd hardhat-project
-```
-
-### 5. 配置环境变量
-
-```bash
-# 编辑.env文件，设置私钥
-PRIVATE_KEY=your_exported_private_key_here
-```
-
-### 6. 执行部署流程
+### 4. 执行部署流程
 
 > 📚 **详细操作步骤请参考 [hardhat-project/README.md](../hardhat-project/README.md)**
 
