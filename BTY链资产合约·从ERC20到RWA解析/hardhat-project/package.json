@@ -1,0 +1,42 @@
+{
+  "name": "bty-erc20-hardhat-project",
+  "version": "1.0.0",
+  "description": "BTY链ERC20代币合约Hardhat项目",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "deploy:erc20": "hardhat run scripts/deploy-erc20.js",
+    "deploy:erc20:testnet": "hardhat run scripts/deploy-erc20.js --network bty-testnet",
+    "deploy:erc20:mainnet": "hardhat run scripts/deploy-erc20.js --network bty-mainnet",
+    "interact:erc20": "hardhat run scripts/interact-erc20.js",
+    "verify:erc20": "hardhat run scripts/verify-erc20.js",
+    "test:erc20": "hardhat test test/ERC20.test.js",
+    "deploy": "npm run deploy:erc20",
+    "deploy:testnet": "npm run deploy:erc20:testnet",
+    "deploy:mainnet": "npm run deploy:erc20:mainnet",
+    "interact": "npm run interact:erc20",
+    "verify": "npm run verify:erc20"
+  },
+  "keywords": [
+    "blockchain",
+    "erc20",
+    "bty",
+    "hardhat",
+    "solidity"
+  ],
+  "author": "BTY Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^3.4.2",
+    "chai": "^4.3.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.17.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
