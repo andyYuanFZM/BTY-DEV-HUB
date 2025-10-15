@@ -27,7 +27,6 @@ hardhat-project/
 ├── hardhat.config.js            # Hardhat配置
 ├── package.json                 # 依赖管理
 ├── .env                         # 环境变量配置
-└── README.md                    # 项目说明
 ```
 
 **状态说明**：
@@ -117,13 +116,6 @@ npm run interact:erc3643
 # 私钥配置
 PRIVATE_KEY=your_private_key_here
 
-# 网络配置
-BTY_TESTNET_RPC_URL=http://localhost:8546
-BTY_MAINNET_RPC_URL=https://mainnet.bityuan.com/eth
-
-# Gas配置
-GAS_PRICE=20000000000
-GAS_LIMIT=8000000
 ```
 
 ## 📊 部署信息
