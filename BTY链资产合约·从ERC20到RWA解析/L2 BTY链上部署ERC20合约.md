@@ -134,6 +134,6 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 ### 4. 执行部署流程
 
-> 📚 **详细操作步骤请参考 [hardhat-project/README.md](../hardhat-project/README.md)**
+> 📚 **详细操作步骤请参考 [hardhat-project/README.md](./hardhat-project/README.md)**
 
 ```

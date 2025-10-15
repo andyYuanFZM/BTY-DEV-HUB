@@ -1,7 +1,7 @@
 {
   "name": "bty-erc20-hardhat-project",
   "version": "1.0.0",
-  "description": "BTY链ERC20代币合约Hardhat项目",
+  "description": "BTY链ERC20到RWA合约Hardhat项目",
   "main": "index.js",
   "scripts": {
     "compile": "hardhat compile",
