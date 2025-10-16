@@ -61,24 +61,56 @@ npm test
 # 部署ERC20到BTY测试网
 npm run deploy:erc20:testnet
 
-# 部署ERC1404到BTY测试网
-npm run deploy:erc1404:testnet
-
-# 部署ERC3643到BTY测试网
-npm run deploy:erc3643:testnet
 ```
 
 ### 6. 交互测试
 ```bash
 # 与ERC20合约交互
-npm run interact:erc20
+npm run interact:erc20:testnet
 
-# 与ERC1404合约交互
-npm run interact:erc1404
-
-# 与ERC3643合约交互
-npm run interact:erc3643
 ```
+
+> **📝 BTY链Hash格式兼容处理说明**
+> 
+> **问题背景**：
+> 由于BTY链最初兼容BTC地址格式，后续增加以太坊兼容性，导致链上返回BTC格式的hash，而ethers.js期望以太坊格式hash，因此某些情况下会出现"Transaction hash mismatch"错误。 具体参考：/scripts/interact-erc20.js中的83-101行
+> 
+> **为什么需要复杂的try-catch处理**：
+> 正常情况下，以太坊合约交互只需要1-2行代码：
+> ```javascript
+> const tx = await contract.transferFrom(from, to, amount);
+> await tx.wait(); // 等待交易确认
+> ```
+> 
+> 但在BTY链上，由于hash格式不匹配，会出现以下情况：
+> 1. **交易发送成功**：`transferFrom()` 调用成功，交易已上链
+> 2. **Hash验证失败**：`tx.wait()` 时ethers.js发现hash格式不匹配，抛出错误
+> 3. **无法获取真实hash**：错误信息中包含真实的链上hash，但需要从错误消息中提取
+> 
+> **解决方案对比**：
+> - **配置方案**：调整BTY测试链配置（`enableRlpTxHash=true` 且 `enableTxQuickIndex=false`）
+> - **代码方案**：通过catch块处理hash不匹配错误
+> 
+> **选择代码方案的原因**：
+> 由于后续连接BTY公共RPC节点时，无法保证所有节点都采用相同配置，因此在代码中通过catch块处理hash不匹配错误是相对保险的解决方案。
+> 
+> **Hash兼容处理的具体实现**：
+> ```javascript
+> try {
+>   const tx = await contract.transferFrom(from, to, amount);
+>   await tx.wait(); // 正常情况
+> } catch (error) {
+>   if (error.message.includes("Transaction hash mismatch")) {
+>     // 从错误信息中提取真实hash
+>     const match = error.message.match(/returnedHash="(0x[0-9a-fA-F]+)"/);
+>     if (match) {
+>       const realHash = match[1];
+>       // 使用真实hash等待交易确认
+>       const receipt = await provider.waitForTransaction(realHash);
+>     }
+>   }
+> }
+> ```
 
 ## 📝 可用命令
 
