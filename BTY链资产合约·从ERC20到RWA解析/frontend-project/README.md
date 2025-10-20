@@ -19,13 +19,9 @@ frontend-project/
 
 ## 🔧 配置说明
 
-### 合约配置
-需要从hardhat项目复制以下文件内容到 `src/constants/erc20Contract.js`：
+需要从hardhat-project项目复制以下文件内容到 `src/constants/erc20Contract.js`：
 - **ABI**：从 `artifacts/contracts/CustomERC20.sol/CustomERC20.json` 复制
 - **字节码**：从 `artifacts/contracts/CustomERC20.sol/CustomERC20.json` 复制
-
-### 网络配置
-- **BTY测试网**：http://localhost:8545（本地测试）
 
 ## 🛠️ 安装和运行
 
