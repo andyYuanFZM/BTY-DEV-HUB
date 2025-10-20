@@ -1,136 +1,106 @@
-# BTY链ERC20前端交互工程
+# BTY链ERC20代币管理DAPP
 
-> 🎨 **完整的前端项目，用于与BTY链上的ERC20合约交互**
+基于Vue3的BTY链ERC20代币管理应用，支持代币部署和增发功能。
 
-## 📋 项目结构
-
-```
-frontend-project/
-├── src/               # 前端源码
-│   ├── components/    # React组件
-│   ├── utils/         # 工具函数
-│   └── App.js         # 主应用组件
-├── public/            # 静态资源
-├── package.json       # 依赖管理
-└── README.md          # 使用说明
-```
-
-## 🚀 快速开始
+## 🛠️ 安装和运行
 
 ### 1. 安装依赖
-
 ```bash
 npm install
 ```
 
-### 2. 启动开发服务器
-
+### 2. 配置合约ABI
+从hardhat项目复制合约ABI和字节码：
 ```bash
-npm start
+# 复制合约ABI和字节码到 src/constants/erc20Contract.js
+cp ../hardhat-project/artifacts/contracts/CustomERC20.sol/CustomERC20.json ./src/constants/
 ```
 
-### 3. 构建生产版本
+### 3. 启动开发服务器
+```bash
+npm run dev
+```
 
+### 4. 构建生产版本
 ```bash
 npm run build
 ```
 
-## 🎯 功能特性
-
-### 核心功能
-
-- ✅ **钱包连接** - 支持MetaMask钱包连接
-- ✅ **余额查询** - 实时查询代币余额
-- ✅ **转账功能** - 发送代币到指定地址
-- ✅ **授权管理** - 管理代币授权额度
-- ✅ **交易历史** - 查看转账记录
-- ✅ **网络切换** - 支持BTY主网和测试网
-
-### 技术栈
-
-- **React** - 前端框架
-- **Web3.js** - 区块链交互
-- **ethers.js** - 以太坊兼容库
-- **Bootstrap** - UI组件库
-- **Axios** - HTTP请求库
-
 ## 🔧 配置说明
 
-### 环境变量
-
-```bash
-# .env文件
-REACT_APP_CONTRACT_ADDRESS=0x...  # 合约地址
-REACT_APP_NETWORK_ID=6999         # 网络ID
-REACT_APP_RPC_URL=http://localhost:8546  # RPC地址
-```
+### 合约配置
+需要从hardhat项目复制以下文件内容到 `src/constants/erc20Contract.js`：
+- **ABI**：从 `artifacts/contracts/CustomERC20.sol/CustomERC20.json` 复制
+- **字节码**：从 `artifacts/contracts/CustomERC20.sol/CustomERC20.json` 复制
 
 ### 网络配置
+- **BTY主网**：https://mainnet.bityuan.com
+- **BTY测试网**：http://localhost:8545（本地测试）
 
-```javascript
-const networks = {
-  btyTestnet: {
-    chainId: 6999,
-    rpcUrl: 'http://localhost:8546',
-    name: 'BTY Testnet'
-  },
-  btyMainnet: {
-    chainId: 2999,
-    rpcUrl: 'https://mainnet.bityuan.com/eth',
-    name: 'BTY Mainnet'
-  }
-};
+## 📱 使用说明
+
+### 1. 连接钱包
+- 确保已安装MetaMask钱包
+- 点击"连接钱包"按钮
+- 授权应用访问钱包
+
+### 2. 部署代币
+- 切换到"发行代币"Tab
+- 填写代币信息：
+  - **代币名称**：如"My Token"
+  - **代币符号**：如"MTK"
+  - **初始供应量**：如"500000000"
+- 选择是否支持增发功能
+- 点击"创建代币"按钮
+- 确认钱包交易
+
+### 3. 增发代币
+- 切换到"增发代币"Tab
+- 输入合约地址
+- 系统自动获取代币信息
+- 输入增发数量
+- 点击"增发代币"按钮
+- 确认钱包交易
+
+## 🔍 BTY链兼容性
+
+### Hash格式处理
+由于BTY链使用SHA256而不是keccak256，ethers.js会出现"Transaction hash mismatch"错误。应用已内置处理机制：
+
+1. **自动检测**：识别hash不匹配错误
+2. **交易验证**：确认交易实际成功
+3. **用户提示**：显示操作成功状态
+
+### 错误处理
+- **网络错误**：自动重试和错误提示
+- **权限错误**：清晰的权限验证提示
+- **合约错误**：详细的错误信息说明
+
+## 📁 项目结构
+
+```
+frontend-project/
+├── src/
+│   ├── App.vue              # 主应用组件
+│   ├── main.js             # 应用入口
+│   ├── style.css           # 全局样式
+│   └── constants/
+│       └── erc20Contract.js # 合约ABI和字节码配置
+├── package.json            # 项目配置
+├── vite.config.js         # Vite配置
+└── index.html             # HTML模板
 ```
 
-## 📱 界面功能
+## 🚨 注意事项
 
-### 主要页面
+1. **合约ABI配置**：必须从hardhat项目复制正确的ABI和字节码
+2. **网络连接**：确保MetaMask连接到正确的BTY网络
+3. **权限管理**：只有合约owner才能进行增发操作
+4. **代币名称**：避免使用主流代币名称和符号
 
-1. **首页** - 钱包连接和网络状态
-2. **代币管理** - 余额查询和转账功能
-3. **授权管理** - 代币授权和取消授权
-4. **交易记录** - 历史交易查询
-5. **设置** - 网络配置和合约地址
+## 🔗 相关链接
 
-### 交互流程
-
-1. **连接钱包** - 点击连接MetaMask
-2. **选择网络** - 切换到BTY网络
-3. **查询余额** - 查看代币余额
-4. **执行转账** - 发送代币交易
-5. **确认交易** - 在钱包中确认
-
-## 🛠️ 开发说明
-
-### 项目特点
-
-- **响应式设计** - 支持移动端和桌面端
-- **错误处理** - 完善的错误提示和处理
-- **加载状态** - 交易过程中的加载提示
-- **交易确认** - 交易状态的实时更新
-
-### 代码结构
-
-```javascript
-// 主要组件
-├── WalletConnect.js    # 钱包连接组件
-├── TokenBalance.js     # 余额显示组件
-├── TransferForm.js     # 转账表单组件
-├── ApprovalManager.js  # 授权管理组件
-└── TransactionList.js  # 交易列表组件
-```
-
-## 🎯 使用流程
-
-1. **启动BTY测试链** - 确保测试链正在运行
-2. **部署ERC20合约** - 使用hardhat-project部署合约
-3. **配置前端** - 设置合约地址和网络配置
-4. **启动前端** - 运行前端项目
-5. **开始交互** - 连接钱包并开始使用
-
-## 📚 相关资源
-
-- [React官方文档](https://reactjs.org/docs)
-- [Web3.js文档](https://web3js.readthedocs.io/)
-- [ethers.js文档](https://docs.ethers.io/)
-- [BTY官方文档](https://docs.bityuan.com/)
+- [BTY链官网](https://bityuan.com)
+- [BTY区块浏览器](https://mainnet.bityuan.com)
+- [Ethers.js文档](https://docs.ethers.io/v5/)
+- [Vue 3文档](https://vuejs.org/)
