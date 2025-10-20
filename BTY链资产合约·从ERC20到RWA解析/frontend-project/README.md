@@ -15,6 +15,7 @@ frontend-project/
 ├── package.json            # 项目配置
 ├── vite.config.js         # Vite配置
 └── index.html             # HTML模板
+```
 
 ## 🔧 配置说明
 
