@@ -322,8 +322,6 @@ export default {
            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
            account.value = accounts[0]
            
-           // 创建provider和signer - 修复网络属性问题
-           // 使用更稳定的方式创建provider，避免网络属性访问
            try {
              provider.value = new ethers.providers.Web3Provider(window.ethereum, "any")
              signer.value = provider.value.getSigner()

@@ -8,13 +8,10 @@
 
 | 集数 | 内容 | 状态 | 视频链接 |
 |------|------|------|----------|
-| 第1集 | 课程介绍 + BTY链介绍 + 测试环境搭建 + 钱包连接 | ✅ 完成 | [📺 观看视频](https://www.bilibili.com/video/BV16D4AzFEE3/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) |
-| 第2集 | 第一个资产上链：ERC20代币合约编写与部署 | 🔜 | 🔜 |
-| 第3集 | 结合前端调用链上资产（转账/增发等） | 🔜 | 🔜 |
-| 第4集 | 合规资产ERC1400/1404介绍与实现 | 🔜 | 🔜 |
-| 第5集 | RWA 真实世界资产上链模型解析与Demo | 🔜 | 🔜 |
-| 第6集 | 资产发行的最佳实践与部署流程 | 🔜 | 🔜 |
-| 第7集 | 综合项目：完整资产发行DApp部署 | 🔜 | 🔜 |
+| 第1集 | 课程介绍 + BTY链介绍 + 测试环境搭建 + 钱包连接 | ✅ 完成 | [📺 视频1](https://www.bilibili.com/video/BV16D4AzFEE3/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) |
+| 第2集 | 第一个资产上链：ERC20代币合约编写与部署及前端调用 | ✅ 完成  | [📺 视频2.1](https://www.bilibili.com/video/BV1tb4yzxEzm/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) <br> [📺 视频2.2](https://www.bilibili.com/video/BV1np4ezSEDp/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) <br> [📺 视频2.3](https://www.bilibili.com/video/BV1rqWyzuEZX/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) <br> [📺 视频2.4](https://www.bilibili.com/video/BV1NosgzHEHD/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) |
+| 第3集 | 合规资产ERC1400/1404介绍与实现 | 🔜 | 🔜 |
+| 第4集 | RWA 真实世界资产上链模型解析与Demo | 🔜 | 🔜 |
 
 ---
 

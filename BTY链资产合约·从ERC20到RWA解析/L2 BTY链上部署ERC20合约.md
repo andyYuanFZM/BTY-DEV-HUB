@@ -139,7 +139,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 ---
 
-## 六、前端与ERC20合约对接
+## 六、前端与ERC20合约对接（DAPP开发）
 
 > 🌐 **ERC20管理DAPP界面，代币管理功能DEMO**
 
