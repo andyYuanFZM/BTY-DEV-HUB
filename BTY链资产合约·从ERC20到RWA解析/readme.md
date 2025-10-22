@@ -10,7 +10,7 @@
 |------|------|------|----------|----------|
 | 第1集 | 课程介绍 + BTY链介绍 + 测试环境搭建 + 钱包连接 | ✅ 完成 | [📺 视频1](https://www.bilibili.com/video/BV16D4AzFEE3/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) |[📘 查看文档](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/L1%20BTY%E4%BB%8B%E7%BB%8D%2B%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%8F%8A%E8%BF%9E%E6%8E%A5.md)|
 | 第2集 | 第一个资产上链：ERC20代币合约编写与部署及前端调用 | ✅ 完成  | [📺 视频2.1](https://www.bilibili.com/video/BV1tb4yzxEzm/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) <br> [📺 视频2.2](https://www.bilibili.com/video/BV1np4ezSEDp/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) <br> [📺 视频2.3](https://www.bilibili.com/video/BV1rqWyzuEZX/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) <br> [📺 视频2.4](https://www.bilibili.com/video/BV1NosgzHEHD/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed) |[📘 查看文档](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/L2%20BTY%E9%93%BE%E4%B8%8A%E9%83%A8%E7%BD%B2ERC20%E5%90%88%E7%BA%A6.md)|
-| 第3集 | 合规资产1404介绍与实现 | 🔜 | 🔜 |----------|
+| 第3集 | 合规资产1404介绍与实现 | 🔜 | 🔜 ||
 | 第4集 | RWA 真实世界资产上链模型解析与Demo | 🔜 | 🔜 |
 
 ---
