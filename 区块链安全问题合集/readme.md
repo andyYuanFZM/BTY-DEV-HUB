@@ -106,13 +106,6 @@ function payOut(address recipient, uint _amount)
 }
 ```
 
-### 攻击流程
-1. **调用withdrawRewardFor**：攻击者调用提现函数
-2. **外部调用触发**：payOut函数执行recipient.call.value()
-3. **重入攻击**：被攻击合约再次调用withdrawRewardFor
-4. **状态未更新**：paidOut[_account]尚未更新，可以重复提现
-5. **资金耗尽**：重复执行直到合约资金耗尽
-
 ### 对BTY链的启示
 - **Checks-Effects-Interactions模式**：先检查，再更新状态，最后外部调用
 - **重入锁机制**：使用重入锁防止递归调用
