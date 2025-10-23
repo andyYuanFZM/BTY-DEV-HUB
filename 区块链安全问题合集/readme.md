@@ -7,6 +7,7 @@
 - [前言](#前言)
 - [1. 2010年的BTC通胀漏洞](#1-2010年的btc通胀漏洞)
 - [2. 以太坊DDoS攻击：FOMO3D游戏漏洞](#2-以太坊ddos攻击fomo3d游戏漏洞)
+- [3. 以太坊重入攻击：The DAO被掏空](#3-以太坊重入攻击the-dao被掏空)
 
 ---
 
@@ -49,5 +50,73 @@
 - **交易排序优化**：改进交易排序算法，防止恶意堵塞
 - **Gas机制设计**：合理设置Gas限制和价格机制
 - **游戏合约安全**：在游戏设计中考虑此类攻击场景
+
+---
+
+## 3. 以太坊重入攻击：The DAO被掏空
+> 💰 **智能合约史上的重大事件：重入攻击导致以太坊硬分叉**
+
+### 📋 事件概述
+2016年6月，The DAO项目遭受重入攻击，损失约6000万美元，最终导致以太坊硬分叉。这是智能合约历史上最著名的安全事件之一。
+
+### 攻击原理
+1. **外部调用时机**：合约在更新状态前进行外部调用
+2. **状态未更新**：外部调用时合约状态尚未更新
+3. **递归调用**：被调用合约可以再次调用原合约
+4. **重复执行**：利用状态未更新重复执行逻辑
+
+### 漏洞代码分析
+
+**问题代码1：withdrawRewardFor函数**
+```solidity
+function withdrawRewardFor(address _account)
+    noether
+    internal
+    returns (bool success)
+{
+    if ((balanceOf(_account) * rewardAccount.accumulatedInput()) / totalSupply < paidOut[_account])
+        throw;
+
+    uint reward =
+        (balanceOf(_account) * rewardAccount.accumulatedInput()) / totalSupply
+        - paidOut[_account];
+
+    if (!rewardAccount.payOut(_account, reward))  // ⚠️ 漏洞点：外部调用
+        throw;
+
+    paidOut[_account] += reward;  // ⚠️ 漏洞点：状态更新在外部调用之后
+    return true;
+}
+```
+
+**问题代码2：payOut函数**
+```solidity
+function payOut(address recipient, uint _amount)
+    returns (bool)
+{
+    if (msg.sender != owner || msg.value > 0 || (payOwnerOnly && recipient != owner))
+        throw;
+
+    if (recipient.call.value(_amount)()) {  // ⚠️ 关键漏洞：外部调用
+        // vulnerablePayOut(recipient, amount);
+        return true;
+    } else {
+        return false;
+    }
+}
+```
+
+### 攻击流程
+1. **调用withdrawRewardFor**：攻击者调用提现函数
+2. **外部调用触发**：payOut函数执行recipient.call.value()
+3. **重入攻击**：被攻击合约再次调用withdrawRewardFor
+4. **状态未更新**：paidOut[_account]尚未更新，可以重复提现
+5. **资金耗尽**：重复执行直到合约资金耗尽
+
+### 对BTY链的启示
+- **Checks-Effects-Interactions模式**：先检查，再更新状态，最后外部调用
+- **重入锁机制**：使用重入锁防止递归调用
+- **外部调用限制**：限制外部调用的权限和频率
+- **状态更新优先**：确保状态在外部调用前完成更新
 
 ---
