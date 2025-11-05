@@ -205,8 +205,75 @@
 
 > 🛠️ **实战演练：真实资产上链的完整流程**
 
-*内容待补充...*
+### 📦 一、合约部署（后端）
 
----
+#### 1.1 项目准备
+
+**参考文档**：[ERC-3643 + RWA 部署到BTY测试网指南](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/ERC-3643/BTY-%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97.md)
+
+
+### 🖥️ 二、前端DAPP使用（前端）
+
+#### 2.1 项目准备
+
+**参考文档**：[BTY链ERC20代币管理DAPP](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/frontend-project/README.md)
+
+**项目目录结构**：
+```
+frontend-project/
+├── src/
+│   ├── App.vue             # 主应用组件（包含ERC20和RWA功能）
+│   ├── main.js             # 应用入口
+│   ├── style.css           # 全局样式
+│   └── constants/
+│       ├── erc20Contract.js # ERC20合约ABI和字节码
+│       └── rwaContracts.js  # RWA合约ABI和部署信息
+├── package.json            # 项目配置
+├── vite.config.js         # Vite配置
+└── index.html             # HTML模板
+```
+
+#### 2.2 配置说明
+
+**RWA合约配置**：
+1. 将 `bty-deployment-info.json` 中的合约地址复制到 `src/constants/rwaContracts.js`
+2. 确保ABI配置正确（AssetRegistry、RevenueDistributor、Token等）
+
+
+### 📋 三、功能说明
+
+#### 3.1 资产注册（Owner）
+
+- **功能**：将新能源设备信息上链登记
+- **权限**：仅Owner可操作
+- **数据记录**：设备ID、类型、位置、容量、安装日期、状态、关联代币
+
+#### 3.2 用户注册（Agent）
+
+- **功能**：注册用户身份到IdentityRegistry
+- **权限**：仅Agent可操作
+- **数据记录**：用户地址、Identity合约地址、国家代码
+
+#### 3.3 代币分发（Agent）
+
+- **功能**：向已注册用户分发RWA代币（mint）
+- **权限**：仅Agent可操作
+- **验证**：自动检查用户是否已注册，未注册用户无法接收代币
+
+#### 3.4 收益分配（Owner）
+
+- **功能**：记录收益并分配给代币持有人
+- **权限**：仅Owner可操作
+- **流程**：
+  1. 先向RevenueDistributor合约转入BTY
+  2. 调用 `distributeRevenue()` 记录收益
+  3. 手动调用 `batchAddClaimableRevenue()` 为每个用户添加可提取收益
+
+#### 3.5 收益提取（User）
+
+- **功能**：用户提取已分配的收益
+- **权限**：所有用户可操作
+- **前提**：用户必须有可提取收益余额
+
 
 **免责声明**：本文档仅用于技术学习和研究目的，不构成任何投资建议。在实际应用中，请确保遵守相关法律法规。

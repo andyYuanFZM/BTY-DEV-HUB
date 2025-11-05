@@ -133,8 +133,9 @@ npm run interact:rwa
 
 | 合约 | 位置 | 主要功能 |
 |------|------|---------|
-| **AssetRegistry** | `contracts/rwa/AssetRegistry.sol` | 设备登记、收益记录、状态管理 |
-| **RevenueDistributor** | `contracts/rwa/RevenueDistributor.sol` | 收益分配、收益计算、收益提取 |
+| **AssetRegistry** | `contracts/rwa/AssetRegistry.sol` | 设备登记、收益记录、状态管理、设备与代币关联 |
+| **RevenueDistributor** | `contracts/rwa/RevenueDistributor.sol` | 收益分配、收益计算、收益提取、批量分配 |
+| **MockOnchainID** | `contracts/rwa/MockOnchainID.sol` | Demo模式身份合约，简化KYC流程 |
 
 ### 集成方式
 
