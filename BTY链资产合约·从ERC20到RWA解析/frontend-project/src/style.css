@@ -45,6 +45,39 @@ body {
   color: #666;
 }
 
+.main-tab-container {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  background: #f8f9fa;
+}
+
+.main-tab {
+  flex: 1;
+  padding: 16px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #666;
+  border-bottom: 3px solid transparent;
+}
+
+.main-tab.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+  background: white;
+}
+
+.main-tab:hover {
+  background: #f0f0f0;
+}
+
+.main-tab.active:hover {
+  background: white;
+}
+
 .tab-container {
   display: flex;
   border-bottom: 1px solid #e0e0e0;
