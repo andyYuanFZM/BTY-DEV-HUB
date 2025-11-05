@@ -216,7 +216,7 @@
 
 #### 2.1 项目准备
 
-**参考文档**：[BTY链ERC20代币管理DAPP](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/frontend-project/README.md)
+**参考文档**：[BTY链ERC20/ERC3643代币管理DAPP](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/frontend-project/README.md)
 
 **项目目录结构**：
 ```
