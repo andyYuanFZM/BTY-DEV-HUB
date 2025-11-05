@@ -1,0 +1,45 @@
+{
+  "network": "bty-testnet",
+  "deployer": "0x5408BacC4b9EA83E668b190589ba3abF9f669350",
+  "tokenIssuer": "0x5408BacC4b9EA83E668b190589ba3abF9f669350",
+  "tokenAgent": "0x5408BacC4b9EA83E668b190589ba3abF9f669350",
+  "timestamp": "2025-11-05T07:44:00.747Z",
+  "implementations": {
+    "claimTopicsRegistry": "0xBAc0E15D697Ad3950F926d7daD080de81c662243",
+    "trustedIssuersRegistry": "0xe22D0386659b9d69033eDaa8799D80dd7F0839d4",
+    "identityRegistryStorage": "0x55f365e5D5FD6bb751Cb25F65Df404199D6C6DA9",
+    "identityRegistry": "0x07314D958ffC8E4dce311f9e369424d7496450F0",
+    "modularCompliance": "0x58B767d4e30116c505dBC2124EEfD8CdfB899176",
+    "token": "0xA61caf4935b6baA8674ee002d3A0276DFcB22B74",
+    "identity": "0x1D1Fdf6711c89d5e3d5Fd420b1F4e9a3b1987f13"
+  },
+  "authorities": {
+    "trexImplementationAuthority": "0x57382cbdC93274adcB1f00dB425a136BE7480b78",
+    "identityImplementationAuthority": "0x198eAd02aeA8A83fE25582bd717E0F7542f31B60"
+  },
+  "factories": {
+    "trexFactory": "0x4C2647C1473B056BC8420e85572c51E2484c536F",
+    "identityFactory": "0x83c4891414A91C972a2e3A292232Ba11bF6B3847"
+  },
+  "proxies": {
+    "claimTopicsRegistry": "0xE27B955c794f22ddCe51850C256A3Db7AF751E29",
+    "trustedIssuersRegistry": "0xb4c0BEc3ea2cD2DFA539d0fE1311730D442773C9",
+    "identityRegistryStorage": "0x87537d88442c09918bEA4F099459e3751bA7ca52",
+    "identityRegistry": "0x18E35060d2A3Fd556BAa3B8cfbF6230b779aE5ab",
+    "token": "0x331EAD053b69978D7d105029E56f4c9f20982DB2",
+    "tokenOID": "0xA0B29703394dA534FBA5BA5d19F498Ea26a67375"
+  },
+  "compliance": {
+    "defaultCompliance": "0x311Dd8A7803632FfAC6040ebC118d7FC9F51F135"
+  },
+  "rwa": {
+    "assetRegistry": "0xE890F4EdBAe227CcAB5e51415a271825C26Ce5b7",
+    "revenueDistributor": "0xDa0C4E4744c320Bc38161aaEC5C0673570B50Cbc",
+    "mockOnchainID": "0xe7Fa360d0D3B7e4F4aF3d312645001BC1C2E7bAd"
+  },
+  "tokenInfo": {
+    "name": "RWA Energy Token",
+    "symbol": "RWAET",
+    "decimals": "0"
+  }
+}
