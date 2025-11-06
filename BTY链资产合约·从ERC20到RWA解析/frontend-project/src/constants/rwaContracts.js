@@ -1,15 +1,15 @@
 // RWA 合约部署信息（从 bty-deployment-info.json 获取）
 // 注意：如果重新部署了合约，需要更新这里的地址
 export const RWA_DEPLOYMENT_INFO = {
-  token: "0x331EAD053b69978D7d105029E56f4c9f20982DB2", // Token Proxy地址
-  identityRegistry: "0x18E35060d2A3Fd556BAa3B8cfbF6230b779aE5ab", // IdentityRegistry Proxy地址
-  assetRegistry: "0xE890F4EdBAe227CcAB5e51415a271825C26Ce5b7", // AssetRegistry地址
-  revenueDistributor: "0xDa0C4E4744c320Bc38161aaEC5C0673570B50Cbc", // RevenueDistributor地址
-  tokenOID: "0xA0B29703394dA534FBA5BA5d19F498Ea26a67375", // Token OID地址
+  token: "0x27Aa36B0525cFa2812A58816B27E64f2039344A3", // Token Proxy地址
+  identityRegistry: "0x65771dc08C31EEA341711666135a1A536fA9cdcf", // IdentityRegistry Proxy地址
+  assetRegistry: "0x03E8D1A8DcaEcDe080343d7D37625235F2acA8Bd", // AssetRegistry地址
+  revenueDistributor: "0x9d6bC725e10A26C7401e79D05628A6b01c9d8C5E", // RevenueDistributor地址
+  tokenOID: "0xcC2Eeb5e27d647d54238952d30734095bC191457", // Token OID地址
   tokenAgent: "0x5408BacC4b9EA83E668b190589ba3abF9f669350", // 部署时设置的Agent地址
-  identityFactory: "0x83c4891414A91C972a2e3A292232Ba11bF6B3847", // IdentityFactory地址（当前未使用，但保留以备后用）
-  identityImplementationAuthority: "0x198eAd02aeA8A83fE25582bd717E0F7542f31B60", // Identity ImplementationAuthority地址（当前未使用，但保留以备后用）
-  mockOnchainID: "0xe7Fa360d0D3B7e4F4aF3d312645001BC1C2E7bAd", // MockOnchainID地址（Demo模式：所有用户共享）
+  identityFactory: "0x5BaE9688efE10E23d450b8facb905Aad51141c72", // IdentityFactory地址（当前未使用，但保留以备后用）
+  identityImplementationAuthority: "0x27053fC83FF8192BF8FF40E86Fb12E553F52E867", // Identity ImplementationAuthority地址（当前未使用，但保留以备后用）
+  mockOnchainID: "0x6e0E0C8654cA17F950469feC9FD121d82A2fD50e", // MockOnchainID地址（Demo模式：所有用户共享）
   tokenInfo: {
     name: "RWA Energy Token",
     symbol: "RWAET",

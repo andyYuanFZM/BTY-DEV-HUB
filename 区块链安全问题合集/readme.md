@@ -15,6 +15,18 @@
 
 ---
 
+## 📹 视频链接
+
+- [1. 2010年比特币无限增发漏洞](https://www.bilibili.com/video/BV1TpstzBELY/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- [2. 以太坊DDoS攻击：FOMO3D游戏漏洞](https://www.bilibili.com/video/BV1cDsizHEtX/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- [3. 以太坊重入攻击：The DAO被掏空](https://www.bilibili.com/video/BV1VUsqzkEua/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- [4. 警惕剪贴板劫持：一次转账，资产归零](https://www.bilibili.com/video/BV1iKsDzmEK6/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- [5. 比特币分家：社区分裂引发的硬分叉](https://www.bilibili.com/video/BV1uuymBZE39/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- [6. Parity多签漏洞：一行代码偷走15万枚ETH](https://www.bilibili.com/video/BV1yX1KBgEfD/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- [7. Parity多签漏洞：一次误操作锁死50万枚ETH](https://www.bilibili.com/video/BV14Y1uBDEnS/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+
+---
+
 ## 📋 前言
 
 在 BTY 链的开发过程中，我们深入分析了区块链历史上多个具有代表性的安全事件。这些真实发生过的漏洞和攻击案例，为 BTY 链的安全设计与系统开发提供了宝贵的经验与启示。通过总结这些事件，也是想帮助更多开发者理解区块链安全机制的本质，构建更稳健、更可信的应用生态。

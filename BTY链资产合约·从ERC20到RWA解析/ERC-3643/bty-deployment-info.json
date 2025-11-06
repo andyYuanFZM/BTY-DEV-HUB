@@ -3,39 +3,39 @@
   "deployer": "0x5408BacC4b9EA83E668b190589ba3abF9f669350",
   "tokenIssuer": "0x5408BacC4b9EA83E668b190589ba3abF9f669350",
   "tokenAgent": "0x5408BacC4b9EA83E668b190589ba3abF9f669350",
-  "timestamp": "2025-11-05T07:44:00.747Z",
+  "timestamp": "2025-11-06T01:57:59.953Z",
   "implementations": {
-    "claimTopicsRegistry": "0xBAc0E15D697Ad3950F926d7daD080de81c662243",
-    "trustedIssuersRegistry": "0xe22D0386659b9d69033eDaa8799D80dd7F0839d4",
-    "identityRegistryStorage": "0x55f365e5D5FD6bb751Cb25F65Df404199D6C6DA9",
-    "identityRegistry": "0x07314D958ffC8E4dce311f9e369424d7496450F0",
-    "modularCompliance": "0x58B767d4e30116c505dBC2124EEfD8CdfB899176",
-    "token": "0xA61caf4935b6baA8674ee002d3A0276DFcB22B74",
-    "identity": "0x1D1Fdf6711c89d5e3d5Fd420b1F4e9a3b1987f13"
+    "claimTopicsRegistry": "0xDAecb7712995Ff6Ad69e03d5795d05756e6104D8",
+    "trustedIssuersRegistry": "0x881D89dA5E2bBF0F264E6DC010C1294b0E24017B",
+    "identityRegistryStorage": "0x862376FcB903f6A93C5112319db7E10c22AEf6B1",
+    "identityRegistry": "0x1B1A1338e648e8de71A0669DCB853847F023Cf15",
+    "modularCompliance": "0xdFd585210e7d785A992E8C0b5Fc4a4C6CAEd5dA1",
+    "token": "0xC25aF3Ffd6E229172227059Eee291ecC0e669081",
+    "identity": "0x339F27E6524eF6EccB79EE737E1Db4298B2429e2"
   },
   "authorities": {
-    "trexImplementationAuthority": "0x57382cbdC93274adcB1f00dB425a136BE7480b78",
-    "identityImplementationAuthority": "0x198eAd02aeA8A83fE25582bd717E0F7542f31B60"
+    "trexImplementationAuthority": "0x6E8d6A73D8dba7E7Eb7AAc72E4c8a16808CAA76c",
+    "identityImplementationAuthority": "0x27053fC83FF8192BF8FF40E86Fb12E553F52E867"
   },
   "factories": {
-    "trexFactory": "0x4C2647C1473B056BC8420e85572c51E2484c536F",
-    "identityFactory": "0x83c4891414A91C972a2e3A292232Ba11bF6B3847"
+    "trexFactory": "0xc6FED2aE1C8e51F60A18faD1De05690446E5977b",
+    "identityFactory": "0x5BaE9688efE10E23d450b8facb905Aad51141c72"
   },
   "proxies": {
-    "claimTopicsRegistry": "0xE27B955c794f22ddCe51850C256A3Db7AF751E29",
-    "trustedIssuersRegistry": "0xb4c0BEc3ea2cD2DFA539d0fE1311730D442773C9",
-    "identityRegistryStorage": "0x87537d88442c09918bEA4F099459e3751bA7ca52",
-    "identityRegistry": "0x18E35060d2A3Fd556BAa3B8cfbF6230b779aE5ab",
-    "token": "0x331EAD053b69978D7d105029E56f4c9f20982DB2",
-    "tokenOID": "0xA0B29703394dA534FBA5BA5d19F498Ea26a67375"
+    "claimTopicsRegistry": "0xE57e577D3B38c6f58e19BD131131a45570031c18",
+    "trustedIssuersRegistry": "0x40876975aeDa5148a58aFC12391651cFEA9628e6",
+    "identityRegistryStorage": "0x99061931D025550Be9353987Eaa580c45d384C12",
+    "identityRegistry": "0x65771dc08C31EEA341711666135a1A536fA9cdcf",
+    "token": "0x27Aa36B0525cFa2812A58816B27E64f2039344A3",
+    "tokenOID": "0xcC2Eeb5e27d647d54238952d30734095bC191457"
   },
   "compliance": {
-    "defaultCompliance": "0x311Dd8A7803632FfAC6040ebC118d7FC9F51F135"
+    "defaultCompliance": "0x98b868C80aA2FaF05F8D67DBFEc635d1eb1420C6"
   },
   "rwa": {
-    "assetRegistry": "0xE890F4EdBAe227CcAB5e51415a271825C26Ce5b7",
-    "revenueDistributor": "0xDa0C4E4744c320Bc38161aaEC5C0673570B50Cbc",
-    "mockOnchainID": "0xe7Fa360d0D3B7e4F4aF3d312645001BC1C2E7bAd"
+    "assetRegistry": "0x03E8D1A8DcaEcDe080343d7D37625235F2acA8Bd",
+    "revenueDistributor": "0x9d6bC725e10A26C7401e79D05628A6b01c9d8C5E",
+    "mockOnchainID": "0x6e0E0C8654cA17F950469feC9FD121d82A2fD50e"
   },
   "tokenInfo": {
     "name": "RWA Energy Token",

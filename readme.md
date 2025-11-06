@@ -25,7 +25,7 @@ BTY 是一条 **兼容以太坊 (EVM)** 的高性能区块链，支持 **平行�
 |------|------|-----------|------|------|
 | 0️⃣ | **BTY开发环境与SDK入门** | 介绍 `Web3.js`, `ethers.js`, `web3j`, `go-eth` 等 SDK 的部署与交互方式 | ✅ 已完成 | [📘 查看文档](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B8%8ESDK%E5%85%A5%E9%97%A8/readme.md) |
 | 1️⃣ | **BTY链资产合约·从ERC20到RWA解析** | 深入资产标准：ERC-20、ERC-1400、ERC-4363（RWA）等的原理、编码、部署与调用 | 🧩 进行中 | [📘 查看文档](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/readme.md) |
-| 2️⃣ | **区块链安全事件** | BTY链安全研究：从历史漏洞中学习，构建更安全的区块链系统 | 📦 计划中 | |
+| 2️⃣ | **区块链安全事件** | BTY链安全研究：从历史漏洞中学习，构建更安全的区块链系统 | 🧩 进行中 | [📘 查看文档](https://github.com/andyYuanFZM/BTY-DEV-HUB/tree/main/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86) |
 | 3️⃣ | **BTY Rollup 技术与二层扩展** | 探索 BTY 平行链与 Rollup 架构，构建高性能 Layer2 环境 | 📦 计划中 | |
 | 4️⃣ | **BTY 链游开发实践（GameFi）** | 在 BTY 上实现链游资产、NFT 与经济系统的完整开发流程 | 📦 计划中 |  |
 | 5️⃣ | **BTY Swap 与 DeFi 应用实现** | 从零构建去中心化交易与流动性系统，理解 BTY 上的 DeFi 生态 | 📦 计划中 |  |
