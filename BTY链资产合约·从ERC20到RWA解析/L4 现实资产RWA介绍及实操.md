@@ -218,27 +218,6 @@
 
 **参考文档**：[BTY链ERC20/ERC3643代币管理DAPP](https://github.com/andyYuanFZM/BTY-DEV-HUB/blob/main/BTY%E9%93%BE%E8%B5%84%E4%BA%A7%E5%90%88%E7%BA%A6%C2%B7%E4%BB%8EERC20%E5%88%B0RWA%E8%A7%A3%E6%9E%90/frontend-project/README.md)
 
-**项目目录结构**：
-```
-frontend-project/
-├── src/
-│   ├── App.vue             # 主应用组件（包含ERC20和RWA功能）
-│   ├── main.js             # 应用入口
-│   ├── style.css           # 全局样式
-│   └── constants/
-│       ├── erc20Contract.js # ERC20合约ABI和字节码
-│       └── rwaContracts.js  # RWA合约ABI和部署信息
-├── package.json            # 项目配置
-├── vite.config.js         # Vite配置
-└── index.html             # HTML模板
-```
-
-#### 2.2 配置说明
-
-**RWA合约配置**：
-1. 将 `bty-deployment-info.json` 中的合约地址复制到 `src/constants/rwaContracts.js`
-2. 确保ABI配置正确（AssetRegistry、RevenueDistributor、Token等）
-
 
 ### 📋 三、功能说明
 
