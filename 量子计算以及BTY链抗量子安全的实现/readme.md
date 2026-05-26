@@ -16,7 +16,13 @@
 
 ---
 
-## 🎯 学习目标
+## � 视频教程
+
+- **【L1 BTY链上量子安全地址演示】**：[https://www.bilibili.com/video/BV19HVN66Eg7/](https://www.bilibili.com/video/BV19HVN66Eg7/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+
+---
+
+## �🎯 学习目标
 
 - 理解量子计算对经典密码学（ECDSA / SHA-256）的威胁
 - 掌握 CRYSTALS-Dilithium 抗量子签名算法的基本原理

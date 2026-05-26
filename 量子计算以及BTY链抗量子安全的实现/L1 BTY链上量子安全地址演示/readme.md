@@ -4,6 +4,10 @@
 
 目前已在 BTY 代码中整合了量子安全地址支持，并跑通了从生成私钥、公钥、签名到上链转账的**完整功能链路**。
 
+## 🎬 视频教程
+
+- **【L1 BTY链上量子安全地址演示】**：[https://www.bilibili.com/video/BV19HVN66Eg7/](https://www.bilibili.com/video/BV19HVN66Eg7/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+
 ---
 
 ## 🔬 Dilithium — 抗量子签名插件
