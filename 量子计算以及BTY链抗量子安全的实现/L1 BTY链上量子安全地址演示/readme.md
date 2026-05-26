@@ -60,7 +60,7 @@ BTY 抗量子安全实现在以下两个仓库的 `quantum` 分支：
 | 仓库 | 地址 | 说明 |
 |---|---|---|
 | chain33 | [https://github.com/andyYuanFZM/chain33/tree/quantum](https://github.com/andyYuanFZM/chain33/tree/quantum) | 区块链主节点代码 |
-| plugin | [https://github.com/andyYuanFZM/plugin/tree/quantum](https://github.com/andyYuanFZM/plugin/tree/quantum) | 插件（含 dilithium 密码学模块） |
+| plugin | [https://github.com/andyYuanFZM/plugin/tree/quantum](https://github.com/andyYuanFZM/plugin/tree/quantum) | 插件库 |
 
 ### 📁 插件目录
 
@@ -68,7 +68,7 @@ BTY 抗量子安全实现在以下两个仓库的 `quantum` 分支：
 plugin/plugin/crypto/dilithium/
 ├── dilithium.go              # Crypto 驱动
 ├── address.go                # 地址驱动
-├── dilithium_test.go         # 11 tests + 3 benchmarks
+├── dilithium_test.go         
 └── README.md
 ```
 
