@@ -90,7 +90,7 @@ git clone -b quantum https://github.com/andyYuanFZM/plugin.git
 
 ## 🛠️ CLI 实操：量子安全地址全流程
 
-所有操作均复用现有 CLI 命令，无需单独工具：
+CLI相关的操作命令（生成助记词，解锁钱包等）参考： https://chain.33.cn/document/286#seed%E6%93%8D%E4%BD%9C
 
 ```bash
 # 1. 创建量子账户（自动生成 dilithium 密钥对）
