@@ -11,14 +11,16 @@
 | 章节 | 名称 | 内容概述 |
 |------|------|-----------|
 | L1 | **BTY链上量子安全地址演示** | Dilithium 抗量子签名插件实战：量子密钥生成、签名、转账全流程 |
+| L2 | **链上实测：secp256k1、Ed25519、SM2、Dilithium 全面对比** | 从钱包、签名到区块大小的全链路评测——量子签名到底慢不慢？ |
 
-> 📌 后续课程规划中，敬请期待。
+> 📌 更多课程规划中，敬请期待。
 
 ---
 
 ## � 视频教程
 
 - **【L1 BTY链上量子安全地址演示】**：[https://www.bilibili.com/video/BV19HVN66Eg7/](https://www.bilibili.com/video/BV19HVN66Eg7/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
+- **【L2 链上实测：secp256k1、Ed25519、SM2、Dilithium 全面对比】**：[待补充]
 
 ---
 
