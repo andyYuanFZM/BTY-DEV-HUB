@@ -20,7 +20,7 @@
 ## � 视频教程
 
 - **【L1 BTY链上量子安全地址演示】**：[https://www.bilibili.com/video/BV19HVN66Eg7/](https://www.bilibili.com/video/BV19HVN66Eg7/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed)
-- **【L2 链上实测：secp256k1、Ed25519、SM2、Dilithium 全面对比】**：[待补充]
+- **【L2 链上实测：secp256k1、Ed25519、SM2、Dilithium 全面对比】**：[[https://www.bilibili.com/video/BV1p1Vt6pEGD](https://www.bilibili.com/video/BV1p1Vt6pEGD)]
 
 ---
 

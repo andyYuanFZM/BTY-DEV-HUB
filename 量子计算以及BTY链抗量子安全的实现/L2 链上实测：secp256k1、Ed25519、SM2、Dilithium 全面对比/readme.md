@@ -71,7 +71,7 @@ Dilithium 的验签性能甚至超越了最轻量的 Ed25519（68.8 μs），在
 
 ## 🎬 视频教程
 
-- **【L2 链上实测：secp256k1、Ed25519、SM2、Dilithium 全面对比】**：[https://www.bilibili.com/video/BV1p1Vt6pEGD/?share_source=copy_web&vd_source=6dc648c02f2bdc5a6e650dadc1136eed]
+- **【L2 链上实测：secp256k1、Ed25519、SM2、Dilithium 全面对比】**：[https://www.bilibili.com/video/BV1p1Vt6pEGD]
 
 ---
 
