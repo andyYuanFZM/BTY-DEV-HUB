@@ -143,7 +143,7 @@ CheckSign ty=261 name=dilithium pubKeyLen=1312 sigLen=2420 cost=35.4us ok=true
 
 ## 关于存储数据的说明
 
-报告中 "Block@1000TX" 是**原始 protobuf 序列化大小**（不含压缩），代表：
+报告中 "Block@1000TX" 是**预估**值（实际只发 40 笔交易，按单笔签名体积等比例外推 1000 笔），反映**原始 protobuf 序列化大小**（不含压缩）：
 
 - 网络传输开销
 - 内存/缓存占用
